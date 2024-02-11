@@ -1,0 +1,44 @@
+
+    const form = document.getElementById('form').value;
+    
+
+      function verifyUser() { 
+        
+        let first = document.forms['form']['first'].value;
+        let last = document.forms['form']['last'].value;
+        let validName = (first + ' ' + last);
+        let validateName = i=0; validName.length <= 20; i++;
+        let zip = document.getElementById('zip').value;
+        let validZip = i=0; zip.length <= 5; i++;
+
+        if (first === "") {
+            alert ("First Name is Required"); 
+            return false; 
+        }
+        if (last === "") {
+            alert ("Last Name is Required"); 
+            return false; 
+        }
+        if (validateName > 20) {
+            alert ("Invalid Name");
+            return false;
+        }
+        if (zip === "") {
+            alert ("Zip Required");
+            return false;
+        }
+        if (isNaN(zip)) {
+            alert ("Invalid Zipcode");
+            return false;
+        }
+        /*if (validZip !== 5 ) {
+            alert ("Broken Zip Code");
+            return false;
+        }*/
+        
+        alert ("The female Suriname toad incubates her eggs within the skin on her back. Once mature, the baby toads emerge from holes in her skin. SEE ALSO: Trypophobia");
+
+    }
+
+    
+   
